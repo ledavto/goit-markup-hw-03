@@ -11,6 +11,7 @@
   --btncolor: #4d5ae5;
   --btnBGcolor: #f4f4fd;
   --project-fontcolor: #2e2f42;
+  --collor-button: #e7e9fc;
 }
 
 h1,
@@ -59,11 +60,11 @@ body {
   /* outline: ; */
 }
 
-.page-header{
-  border-bottom: 1px solid #e7e9fc
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
-.container.header-container{
+.container.header-container {
   display: flex;
   gap: 40px;
   align-items: center;
@@ -236,8 +237,6 @@ body {
   color: var(---primary-fontcolor);
 }
 
-
-
 /* ---------------------SECTION 3 */
 .section.doing {
   padding-bottom: 120px;
@@ -265,12 +264,15 @@ body {
 
 .team.list {
   display: flex;
-  gap: 24px;
   list-style: none;
 }
-
+.card-content {
+  padding: 32px 16px 32px;
+}
 .team-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .team-name-group {
@@ -279,10 +281,15 @@ body {
   font-size: 20px;
   letter-spacing: 0.02em;
   color: var(--textcolor);
+  text-align: center;
+  margin-bottom: 8px;
 }
 .container.footer-content {
   display: flex;
   flex-direction: column;
+}
+.pref-text {
+  text-align: center;
 }
 
 .footer {
@@ -324,19 +331,54 @@ body {
 }
 
 /* PORFOLIO */
-.work.list {
-  list-style: none;
+.filter {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
+
+.filter.list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+.work-items {
+  width: calc((100% - 48) / 3);
+}
+.work.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 48px;
+  column-gap: 24px;
+  list-style: none;
+
+  margin: 0 auto;
+}
+.work-items-conteiner {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e7e9fc;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-top: none;
+}
+
 .filt-btn {
   color: var(--btncolor);
   text-align: center;
   letter-spacing: 0.04em;
   background: var(--btnBGcolor);
+  padding: 12px 24px;
+  border: 1px solid var(--collor-button);
+  border-radius: 4px;
 }
 .filt-btn:hover,
 .filt-btn:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 .project.link {
   text-decoration: none;
@@ -348,6 +390,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--project-fontcolor);
+  margin-bottom: 8px;
 }
 .type-project {
   font-weight: 400;
