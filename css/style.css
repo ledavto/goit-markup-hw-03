@@ -256,7 +256,7 @@ body {
   gap: 24px;
   list-style: none;
 }
-
+/* ----------------SECTION 4 */
 .section.team {
   background-color: #f4f4fd;
   padding-top: 120px;
@@ -273,7 +273,7 @@ body {
   background-color: #ffffff;
 }
 
-.name-group {
+.team-name-group {
   font-weight: 500;
   line-height: 1.2;
   font-size: 20px;
