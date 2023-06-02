@@ -305,8 +305,6 @@ body {
   margin-bottom: 8px;
 }
 .container.footer-content {
-  display: flex;
-  flex-direction: column;
 }
 .pref-text {
   text-align: center;
@@ -314,7 +312,7 @@ body {
 
 .footer {
   background-color: var(--textcolor);
-  height: 312px;
+
   padding: 100px 0;
 }
 .footer-text {
@@ -327,6 +325,8 @@ body {
 
 .logo-footer {
   display: inline-block;
+  margin-bottom: 16px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -336,8 +336,6 @@ body {
   color: var(--primary-logocolor);
   list-style: none;
   text-decoration: none;
-
-  margin-bottom: 16px;
 }
 
 .logo-footer-text {
