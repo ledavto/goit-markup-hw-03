@@ -54,10 +54,8 @@ body {
 }
 .container {
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
-  /* outline: ; */
+  padding: 0 15px;
 }
 
 .page-header {
@@ -237,6 +235,10 @@ body {
   color: var(---primary-fontcolor);
 }
 
+.name-group{
+  margin-bottom: 8px;
+}
+
 /* ---------------------SECTION 3 */
 .section.doing {
   padding-bottom: 120px;
@@ -265,6 +267,7 @@ body {
 .team.list {
   display: flex;
   list-style: none;
+  gap: 24px;
 }
 .card-content {
   padding: 32px 16px 32px;
@@ -304,14 +307,10 @@ body {
   max-width: 264px;
   margin-top: 16px;
 }
-.logo-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 .logo-footer.link {
   display: inline-block;
+  display: inline-block
 
   font-family: "Raleway", sans-serif;
   font-weight: 800;
