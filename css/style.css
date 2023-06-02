@@ -68,7 +68,6 @@ body {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .page-header {
@@ -83,6 +82,7 @@ body {
 
   padding-top: 24px;
   padding-bottom: 24px;
+  padding: 0 15px;
 }
 
 .logo-text {
@@ -321,9 +321,8 @@ body {
   margin-top: 16px;
 }
 
-.logo-footer.link {
+.logo-footer {
   display: inline-block;
-  display: inline-block
 
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -347,6 +346,10 @@ body {
   /* padding-top: 96px;
   padding-bottom: 120px; */
 }
+.container.portfolio-container{
+  padding-top: 96px; padding-bottom: 120px;
+}
+
 
 .filter.list {
   display: flex;
