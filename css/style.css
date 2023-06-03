@@ -78,7 +78,6 @@ body {
   display: flex;
   gap: 40px;
   align-items: center;
-  height: 72px;
 
   padding-top: 24px;
   padding-bottom: 24px;
@@ -174,7 +173,6 @@ body {
 
 .section.hero {
   background: var(--textcolor);
-  height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
